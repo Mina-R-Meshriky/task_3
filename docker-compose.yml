@@ -1,0 +1,9 @@
+services:
+  apache:
+    image: dev-php74-apache
+    build:
+      context: .
+    ports:
+      - 8000:80
+    volumes:
+      - .:/var/www/html
